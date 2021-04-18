@@ -15,7 +15,7 @@ class UnlaunchProvider extends React.Component {
   }
 
 
-  initUnlaunchClient = async () => {
+  initULClient = async () => {
     const { apiKey, flagKeys, options, attributes, identity } = this.props;
     const { flags, unlaunchClient } = await initUnlaunchClient(apiKey, flagKeys, identity, attributes, options);
     this.setState({ 
@@ -31,14 +31,14 @@ class UnlaunchProvider extends React.Component {
       return;
     }
 
-    await this.initUnlaunchClient();
+    await this.initULClient();
   }
 
   async componentDidUpdate(prevProps) {
     const { identity } = this.props;
     const userJustLoaded = !prevProps.identity && identity;
     if (userJustLoaded) {
-      await this.initUnlaunchClient();
+      await this.initULClient();
     }
   }
 

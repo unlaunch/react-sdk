@@ -1,6 +1,15 @@
-import  {default as ULClient} from "unlaunch-js-client-lib";
+import * as ULClient from "unlaunch-js-client-lib";
+
 /**
- * Internal function to initialize the `ULClient`.
+ * Internal function to initialize the `UnlaunchClient`.
+ *
+ * @param apiKey Your project and environment specific client side ID
+ * @param flagKeySet Flag Keys for evaluation
+ * @param identity User unique id 
+ * @param attributes Unlaunch attributes for evaluation (Optional)
+ * @param options Unlaunch initialization options
+ *
+ * @return An initialized client and flags
  */
 const initUnlaunchClient = async (
   apiKey,
@@ -13,13 +22,13 @@ const initUnlaunchClient = async (
     apiKey,
     flagKeySet,
     identity,
-    null,
+    attributes,
     options
   );
+  
   return new Promise(resolve => {
 
     unlaunchClient.on('ready', function () {
-
       let rawFlags = {};
 
       if (flagKeySet) {
