@@ -4,7 +4,7 @@ import initUnlaunchClient from './initUnlaunchClient';
 
 /**
  * This is an async function which initializes Unlaunch JS SDK 
- * so all flags and the ldClient are ready before the app is rendered.
+ * so all flags and the unlaunchClient are ready before the app is rendered.
  * @param config - The configuration used to initialize Unlaunch JS client sdk
  */
 export default async function asyncWithUnlaunchProvider(config) {
