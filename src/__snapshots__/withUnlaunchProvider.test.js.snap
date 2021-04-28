@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`withUnlaunchProvider render app 1`] = `
+<Provider
+  value={
+    Object {
+      "flags": Object {},
+      "unlaunchClient": undefined,
+    }
+  }
+>
+  <div>
+    My App
+  </div>
+</Provider>
+`;
