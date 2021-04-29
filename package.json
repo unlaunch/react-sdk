@@ -1,6 +1,9 @@
 {
   "name": "react-client-sdk",
-  "version": "0.1.0",
+  "version": "0.0.1",
+  "description": "Unlaunch SDK for React",
+  "author": "Mahrukh Izhar",
+  "license": "ISC",
   "private": true,
   "type": "module",
   "dependencies": {
@@ -20,5 +23,18 @@
     "@testing-library/react": "^11.2.6",
     "jest": "^26.6.3",
     "jest-dom": "^4.0.0"
-  }
+  },
+   "repository": {
+    "type": "git",
+    "url": "https://github.com/unlaunch/react-sdk.git"
+  },
+  "keywords": [
+    "unlaunch",
+    "react",
+    "sdk"
+  ],
+  "bugs": {
+    "url": "https://github.com/unlaunch/react-sdk.git/issues"
+  },
+  "homepage": "https://github.com/unlaunch/react-sdk.git"
 }
