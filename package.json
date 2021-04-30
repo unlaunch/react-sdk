@@ -1,10 +1,9 @@
 {
-  "name": "react-client-sdk",
+  "name": "unlaunch-react-client-sdk",
   "version": "0.0.1",
   "description": "Unlaunch SDK for React",
   "author": "Mahrukh Izhar",
   "license": "ISC",
-  "private": true,
   "type": "module",
   "dependencies": {
     "react": "^17.0.2",
