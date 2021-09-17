@@ -33,7 +33,7 @@ import { asyncWithUnlaunchProvider } from 'unlaunch-react-sdk';
 
 (async () => {
   const unLaunchProvider = await asyncWithUnlaunchProvider({
-    flag : ['flag-1','flag-1'] // Flag key set
+    flagKeys : ['flag-1','flag-1'] // Flag key set
     apiKey : '<PROVIDE_BROWSER_PUBLIC_KEY_FOR_YOUR_PROJECT>'
     identity : 'anonymous' // Use special anonymous identity which generates a unique UUID
     options = {
@@ -59,7 +59,7 @@ import { asyncWithUnlaunchProvider } from 'unlaunch-react-sdk';
 import { withUnlaunchProvider } from 'unlaunch-react-sdk';
 
 export default withUnlaunchProvider({
-  flag : ['flag-1','flag-1'] // Flag key set
+  flagKeys : ['flag-1','flag-1'] // Flag key set
   apiKey : '<PROVIDE_BROWSER_PUBLIC_KEY_FOR_YOUR_PROJECT>'
   identity : 'anonymous' // Use special anonymous identity which generates a unique UUID
   options: { /* ... */ }
