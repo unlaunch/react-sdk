@@ -33,7 +33,7 @@ import { asyncWithUnlaunchProvider } from 'unlaunch-react-sdk';
 
 (async () => {
   const unLaunchProvider = await asyncWithUnlaunchProvider({
-    flag : ['flag-1','flag-1'] // Flag key set
+    flagKeys : ['flag-1','flag-1'] // Flag key set
     apiKey : '<PROVIDE_BROWSER_PUBLIC_KEY_FOR_YOUR_PROJECT>'
     identity : 'anonymous' // Use special anonymous identity which generates a unique UUID
     options = {
@@ -59,13 +59,28 @@ import { asyncWithUnlaunchProvider } from 'unlaunch-react-sdk';
 import { withUnlaunchProvider } from 'unlaunch-react-sdk';
 
 export default withUnlaunchProvider({
-  flag : ['flag-1','flag-1'] // Flag key set
+  flagKeys : ['flag-1','flag-1'] // Flag key set
   apiKey : '<PROVIDE_BROWSER_PUBLIC_KEY_FOR_YOUR_PROJECT>'
   identity : 'anonymous' // Use special anonymous identity which generates a unique UUID
   options: { /* ... */ }
 })(YourApp);
 ```
+### withUnlaunchConsumer
 
+This is a wrapper function with which we can access flags and unlaunchClient as props in any component at any level of hierarchy. The return value of withUnlaunchConsumer is a wrapper function that takes your component and returns a React component injected with flags & unlaunchClient as props.
+
+```js
+import { withUnlaunchConsumer } from 'unlaunch-react-sdk';
+
+const Home = ({ flags, unlaunchClient /*, ...otherProps */ }) => {
+  // You can call any of the methods from the Unlaunch JavaScript SDK
+
+  return flags.testFlag ? <div>Flag on</div> : <div>Flag off</div>;
+};
+
+export default withUnlaunchConsumer()(Home);
+
+```
  For more information, see the [official guide](https://docs.unlaunch.io/docs/sdks/react-sdk).
 
 ## License
