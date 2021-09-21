@@ -2,7 +2,7 @@
 
 | main                                                                                                                | development                                                                                                                |
 |---------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
-| [![Build Status](https://travis-ci.com/unlaunch/react-sdk.svg?branch=main)](https://travis-ci.com/unlaunch/react-sdk) | [![Build Status](https://travis-ci.com/unlaunch/react-sdk.svg?branch=development)](https://travis-ci.com/unlaunch/react-sdk) |
+|  [![Build Status](https://app.travis-ci.com/unlaunch/react-sdk.svg?branch=main)](https://app.travis-ci.com/unlaunch/react-sdk) | [![Build Status](https://app.travis-ci.com/unlaunch/react-sdk.svg?branch=develop)](https://app.travis-ci.com/unlaunch/react-sdk) |
 
 ## Overview
 The Unlaunch React SDK provides a React API to access Unlaunch feature flags and other features. Using the SDK, you can
